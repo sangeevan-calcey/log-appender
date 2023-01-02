@@ -1,5 +1,3 @@
 logging:
-  level:
-    root: error
   file:
-    name: errorLogs.log
+    name: logs.log

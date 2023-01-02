@@ -4,7 +4,6 @@ import com.example.logappender.dtos.Response;
 import com.example.logappender.services.LogsService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +18,7 @@ public class LogsController {
     private LogsService logsService;
 
     @GetMapping("/test")
-    public String testLogs(){
+    public String testLogs() {
         return ("Welcome to Log Appender");
     }
 
@@ -27,7 +26,7 @@ public class LogsController {
     public ResponseEntity<?> indexOutOfBoundsException() {
         try {
             logsService.indexOutOfBoundsException();
-        } catch (Exception e){
+        } catch (Exception e) {
             log.error(e.getMessage());
         }
         return ResponseEntity.ok(Response.builder().res("There is a error").build());

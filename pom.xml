@@ -28,6 +28,10 @@
 <!--		</dependencies>-->
 <!--	</dependencyManagement>-->
 	<dependencies>
+		<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
 <!--		<dependency>-->
 <!--			<groupId>com.google.cloud</groupId>-->
 <!--			<artifactId>google-cloud-logging</artifactId>-->
